@@ -1,0 +1,98 @@
+@import "variable";
+@import "mixin";
+/* ======================== NAVBAR STYLE ======================== */
+
+section#navbar {
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+
+    .container {
+        nav.nav-bar {
+            @include display-flex;
+            justify-content: space-between;
+            padding: 40px 0;
+
+            .nav-logo {
+                a {
+                    font-size: 22px;
+                    font-weight: 700;
+                    letter-spacing: -1px;
+                    color: $white-color;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .nav-icon {
+                display: none;
+
+                a {
+                    font-size: 24px;
+                    padding-top: 3px;
+                    color: $white-color;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .nav-menu {
+                @include display-flex;
+
+                .nav-link {
+                    margin-right: 35px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    a {
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 13px;
+                        color: $white-color;
+
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ======================== IF SCROLL ========================
+
+section#navbar.fixed-top {
+    position: fixed;
+    background-color: $black-color;
+
+    .container {
+        nav.nav-bar {
+            padding: 16px 0;
+
+            .nav-logo {
+                a {
+                    color: $white-color;
+                }
+            }
+
+            .nav-menu {
+                .nav-link {
+                    a {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ======================== IF SCROLL ========================
+
+/* ======================== NAVBAR STYLE ======================== */

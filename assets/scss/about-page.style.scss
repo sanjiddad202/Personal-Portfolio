@@ -1,0 +1,58 @@
+// -----------------------------------------------
+@import "mixin";
+
+// -----------------------------------------------
+@import "initial.style";
+
+// -----------------------------------------------
+@import "navbar.style";
+
+// -----------------------------------------------
+@import "card.style";
+
+// -----------------------------------------------
+@import "about.style";
+
+
+
+
+
+
+
+
+// -----------------------------------------------
+
+section#info-card {
+    position: absolute;
+    top: -150px;
+}
+
+// -----------------------------------------------
+
+section#abuout-me {
+    .container {
+        .info-skill {
+            padding-top: 55%;
+        }
+    }
+}
+
+// -----------------------------------------------
+
+section#color-box {
+    @include color-box;
+    height: 70vh;
+
+    .container {
+        .title {
+            color: $white-color;
+            font-size: 48px;
+            margin-bottom: 0px;
+            font-weight: 700;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

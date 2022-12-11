@@ -1,0 +1,111 @@
+@import "variable";
+@import "mixin";
+/* ======================== CARD STYLE ======================== */
+
+section#info-card {
+    @include display-flex;
+    // ======================== OPTIONAL ========================
+    position: absolute;
+    top: -500px;
+    // ======================== OPTIONAL ========================
+    background-color: $white-color;
+    box-shadow: 0px 20px 80px 0px #9999994d;
+    border-radius: 10px;
+    padding: 35px;
+
+    .my-pic {
+        flex: 2;
+        margin-right: 90px;
+
+        img {
+            width: 600px;
+            height: 620px;
+            border-radius: 10px;
+        }
+    }
+
+    .my-info {
+        flex: 1;
+
+        .greet {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2.1px;
+            margin-bottom: 12px;
+            color: $primary-text-color;
+        }
+
+        .name {
+            font-size: 48px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: $primary-text-color;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: $primary-text-color;
+        }
+
+        .info {
+            max-width: 540px;
+            color: $secondary-text-color;
+            margin-bottom: 40px;
+        }
+
+        .address-list {
+            li {
+                margin-bottom: 15px;
+
+                a {
+                    i {
+                        font-size: 20px;
+                        color: $primary-color-left;
+                    }
+
+                    p {
+                        margin-left: 16px;
+                        font-size: 16px;
+                        color: $secondary-text-color;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
+        .media-list {
+            margin-top: 45px;
+
+            li {
+                display: inline-block;
+                margin-right: 7px;
+
+                a {
+                    line-height: 40px;
+                    width: 40px;
+                    background-color: #e8e8e8;
+                    border-radius: 5px;
+                    display: inline-block;
+                    text-align: center;
+                    color: $white-color;
+                    font-size: 16px;
+
+                    &:hover {
+                        background-image: linear-gradient(to right, $primary-color-left, $primary-color-right);
+                    }
+
+                    i {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ======================== CARD STYLE ======================== */

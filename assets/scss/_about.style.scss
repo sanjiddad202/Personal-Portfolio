@@ -1,0 +1,164 @@
+@import "variable";
+@import "mixin";
+/* ======================== ABOUT STYLE ======================== */
+
+section#abuout-me {
+    .container {
+        position: relative;
+
+        .info-skill {
+            @include display-flex;
+            justify-content: space-between;
+            // ======================== ONLY HOME PAGE ========================
+
+            padding-top: 24%;
+            padding-bottom: 75px;
+
+            // ======================== ONLY HOME PAGE ========================
+            .info {
+                flex: 1;
+                margin-right: 15px;
+
+                .title {
+                    color: $primary-text-color;
+                    font-size: 36px;
+                    margin-bottom: 18px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+
+                .my-info {
+                    font-size: 15px;
+                    width: 87%;
+                    margin-bottom: 40px;
+                    color: $secondary-text-color;
+                }
+
+                .card-group {
+                    @include display-flex;
+
+                    .card {
+                        border: 1px solid #eeeeee;
+                        padding: 20px 20px;
+                        border-radius: 5px;
+                        max-width: 33.333333%;
+                        margin: 0 15px;
+
+                        &:hover {
+                            border: 1px solid $primary-color-right;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        &:nth-child(1) {
+                            margin-left: 0;
+                        }
+
+                        i {
+                            font-size: 24px;
+                            color: $primary-color-right;
+                        }
+
+                        .amount {
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: $primary-text-color;
+                            margin-bottom: 5px;
+                            margin-top: 10px;
+                            text-transform: uppercase;
+                        }
+
+                        .title {
+                            font-size: 16px;
+                            color: $secondary-text-color;
+                            margin-bottom: 0px;
+                            font-weight: 400;
+                            text-transform: none;
+                            line-height: 1;
+                            letter-spacing: -0.5px;
+                        }
+                    }
+                }
+            }
+
+            .skills {
+                flex: 1;
+                margin-left: 15px;
+
+                .skill-list {
+                    li {
+                        margin-bottom: 18px;
+
+                        .text {
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: $primary-text-color;
+                            padding-bottom: 15px;
+                        }
+
+                        .progress-bar {
+                            border: 1px solid #eeeeee;
+                            border-radius: 25px;
+                            padding: 5px;
+
+                            .bar {
+                                width: 100%;
+                                height: 10px;
+                                background-color: $secondary-color;
+                                border: 1px solid #eeeeee;
+                                border-radius: 25px;
+                                position: relative;
+
+                                &::after {
+                                    content: '';
+                                    display: block;
+                                    background-image: linear-gradient(to right, $primary-color-left, $primary-color-right);
+                                    position: absolute;
+                                    top: -2px;
+                                    left: -1px;
+                                    height: 10px;
+                                    border: 1px solid #eeeeee;
+                                    border-radius: 25px;
+                                }
+                            }
+
+                            .bar.A {
+                                &::after {
+                                    width: 85%;
+                                }
+                            }
+
+                            .bar.B {
+                                &::after {
+                                    width: 95%;
+                                }
+                            }
+
+                            .bar.C {
+                                &::after {
+                                    width: 80%;
+                                }
+                            }
+
+                            .bar.D {
+                                &::after {
+                                    width: 75%;
+                                }
+                            }
+
+                            .bar.E {
+                                &::after {
+                                    width: 70%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ======================== ABOUT STYLE ======================== */
