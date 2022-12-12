@@ -162,7 +162,7 @@ section#info-card .my-pic {
   margin-right: 90px;
 }
 section#info-card .my-pic img {
-  width: 600px;
+  width: 580px;
   height: 620px;
   border-radius: 10px;
 }
@@ -367,6 +367,79 @@ section#abuout-me .container .info-skill .skills .skill-list li .progress-bar .b
 }
 
 /* ======================== ABOUT STYLE ======================== */
+/* ======================== SIZE VARIABLE ======================== */
+/* ======================== SIZE VARIABLE ======================== */
+/* ======================== COLOR VARIABLE ======================== */
+/* ======================== COLOR VARIABLE ======================== */
+/* ======================== SIZE VARIABLE ======================== */
+/* ======================== SIZE VARIABLE ======================== */
+/* ======================== COLOR VARIABLE ======================== */
+/* ======================== COLOR VARIABLE ======================== */
+/* ======================== SERVICE STYLE========================*/
+section#service {
+  padding: 70px 0;
+  background-color: #F9F9FF;
+}
+section#service .container .title {
+  text-align: center;
+  font-size: 36px;
+  color: #222222;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+section#service .container .sub-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #777777;
+  width: 65%;
+  margin: 0 auto;
+}
+section#service .container .card-group {
+  margin: 50px 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section#service .container .card-group .card {
+  padding: 50px 35px;
+  border-radius: 10px;
+  background: #FFF;
+  margin: 13px;
+  max-width: 31%;
+}
+section#service .container .card-group .card:hover {
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.0784313725);
+  border-color: #FFF;
+  background: #FFF;
+}
+section#service .container .card-group .card:hover i {
+  color: #7671FF;
+}
+section#service .container .card-group .card i {
+  margin-bottom: 35px;
+  font-size: 60px;
+  color: #777777;
+}
+section#service .container .card-group .card .card-title {
+  color: #222222;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+section#service .container .card-group .card .card-sub-title {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #777777;
+}
+
+/* ======================== SERVICE STYLE ======================== */
 section#color-box {
   width: 100%;
   height: 100vh;

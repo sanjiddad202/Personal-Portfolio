@@ -8,12 +8,6 @@
 @import "navbar.style";
 
 // -----------------------------------------------
-@import "card.style";
-
-// -----------------------------------------------
-@import "about.style";
-
-// -----------------------------------------------
 @import "service.style";
 
 
@@ -25,7 +19,20 @@
 
 
 // -----------------------------------------------
-
 section#color-box {
     @include color-box;
+    height: 50vh;
+
+    .container {
+        .title {
+            color: $white-color;
+            font-size: 48px;
+            margin-bottom: 0px;
+            font-weight: 700;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }
